@@ -3,11 +3,7 @@ layout: post
 title: How to NOT do benchmarking and Just Qs
 speaker:
   - francesco_nigro
-location: Fusion Fintech
-locationlink: https://www.fusion.xyz/
-address: Avenue de la Praille 50, 1227 Carouge
-transport:  P+R Etoile
-parking: P+R Etoile
+location: fusion
 eventbrite: billets-how-to-not-do-benchmarking-and-just-qs-
 eventbriteid: 84853124981
 ---

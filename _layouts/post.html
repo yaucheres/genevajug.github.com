@@ -23,10 +23,13 @@
 
     {% capture currentDate %}{{'now' | date: '%s' }}{% endcapture %}
     {% capture blogDate %}{{post.date | date: '%s' }}{% endcapture %}
+    {% if page.location %}
+      {% assign postlocation = site.data.locations[page.location] %}
+      <p><a href="{{postlocation.link}}"> {{postlocation.name}}</a> est situé {{postlocation.address}} </p>
+      {% if postlocation.transport%}<p>Transport public : {{postlocation.transport}} </p>{%endif%}
+      {% if postlocation.parking%}<p>Parking : {{postlocation.parking}} </p>{%endif%}
+    {%endif%}
     {% if blogDate < currentDate %}
-      {% if page.location %}<p><a href="{{page.locationlink}}"> {{page.location}}</a> est situé {{page.address}} </p>{%endif%}
-      {% if page.transport%}<p>Transport public : {{page.transport}} </p>{%endif%}
-      {% if page.parking%}<p>Parking : {{page.parking}} </p>{%endif%}
       {% if page.eventbrite%}<center><a href="https://www.eventbrite.com/e/{{page.eventbrite}}{{page.eventbriteid}}?aff=mc" target="_blank"><img src="https://www.eventbrite.fr/custombutton?eid={{page.eventbriteid}}" alt="Eventbrite - {{page.title}}" /></a></center>{%endif%}
     {%endif%}
 </div>

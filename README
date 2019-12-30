@@ -13,11 +13,7 @@ Les différentes metadonnées sont les suivantes :
 * youtube: l'id d'une vidéo youtube (seul l'id de la video est à donner, voir _posts/2017-05-30-spring5.md )  
 * slideshare: une liste d'id slideshare (voir _posts/2011-01-17-anniversaire.md)
 * picasa: l'id d'un album picasa
-* location: le nom du lieu de l'évènement (voir 2019-04-30-kebernetess.md)
-* locationlink: un lien concernant le lieu (voir 2019-04-30-kebernetess.md)
-* address: l'adresse du lieu (voir 2019-04-30-kebernetess.md)
-* transport: le nom du l'arret des transport en commun le pus proche (voir 2019-04-30-kebernetess.md)
-* parking: le nom du parking le plus proche (voir 2019-04-30-kebernetess.md)
+* location: la référence du lieu (fichier _data/locations.yml)
 * eventbrite: la référence au ticket eventbrite (voir 2019-04-30-kebernetess.md)
 * eventbriteid: l'id de el'évènement eventbrite (voir 2019-04-30-kebernetess.md)
 
