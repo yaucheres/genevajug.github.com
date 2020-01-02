@@ -24,6 +24,7 @@
     {% capture currentDate %}{{'now' | date: '%s' }}{% endcapture %}
     {% capture blogDate %}{{post.date | date: '%s' }}{% endcapture %}
     {% if page.location %}
+      <p><strong>Information about the location :</strong></p>
       {% assign postlocation = site.data.locations[page.location] %}
       <p><a href="{{postlocation.link}}"> {{postlocation.name}}</a> est situé {{postlocation.address}} </p>
       {% if postlocation.transport%}<p>Transport public : {{postlocation.transport}} </p>{%endif%}
